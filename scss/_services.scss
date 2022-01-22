@@ -1,0 +1,252 @@
+@import "./base.scss";
+
+.services{
+    width: 100%;
+    padding: 69px 0 0 0;
+    position: relative;
+    &::before{
+        content: '';
+        width: 100%;
+        height: 288px;
+        background-color: $light;
+        position: absolute;
+        z-index: -1;
+        top: 169px;
+        @include for-landscape-phones{
+            height: 350px;
+        }
+          @include for-portrait-phones{
+            height: 350px;
+        }
+          @include for-small-phones{
+            height: 580px;
+        }
+        @include for-iphone5{
+            height: 580px;
+        }
+    }
+    &__body{
+        display: flex;
+        margin-top: 70px;
+        @include for-landscape-phones{
+           display: block;
+        }
+        @include for-portrait-phones{
+            display: block;
+        }
+        @include for-small-phones{
+            display: block;
+        }
+        @include for-iphone5{
+            display: block;
+        }
+    }
+    &__tab{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        align-items: flex-start;
+        max-width: 280px;
+        width: 100%;
+        margin-right: 116px;
+        &::after{
+            content: '';
+            width: 7px;
+            height: 319px;
+            background-color: $black;
+            position: absolute;
+            right: 0;
+            top: -70px;
+            @include for-landscape-phones{
+                display: none;
+             }
+             @include for-portrait-phones{
+                 display: none;
+             }
+             @include for-small-phones{
+                 display: none;
+             }
+             @include for-iphone5{
+                display: none;
+            }
+        }
+        @include for-tablet-portrait{
+          margin-right: 60px; 
+        }
+        @include for-landscape-phones{
+            margin-right: 0;
+            flex-direction: row;
+            align-items: center;
+        }
+        @include for-portrait-phones{
+            margin-right: 0;
+            flex-direction: row;
+            align-items: center;
+            
+        }
+        @include for-small-phones{
+            margin-right: 0;
+            flex-direction: row;
+            align-items: center;
+            
+        }
+        @include for-iphone5{
+            margin-right: 0;
+            flex-direction: row;
+            align-items: center;
+            
+        }
+    }
+}
+.tab{
+    &__item{
+        width: 100%;
+        margin-bottom: 45px;
+        cursor: pointer;
+        &.active{
+            padding: 9px 0 11px 0;
+            background-color: $black;
+            position: relative;
+            @include for-landscape-phones{
+                padding: 10px 10px;
+                border-radius: 5px;
+             }
+             @include for-portrait-phones{
+                padding: 10px 10px;
+                border-radius: 5px;
+             }
+             @include for-small-phones{
+                padding: 10px 10px;
+                border-radius: 5px;
+             }
+             @include for-iphone5{
+                padding: 10px 10px;
+                border-radius: 5px;
+             }
+        }
+        &.active a{
+            color: $yellow;
+            &::before{
+                display: none;
+            }
+        }
+        @include for-landscape-phones{
+            margin-right: 50px;
+            margin-bottom: 0;
+            background-color: $yellow;
+            color: $black;
+            padding: 10px 10px;
+            border-radius: 5px;
+            z-index: -2;
+            position: relative;
+            top: -5px;
+         }
+         @include for-portrait-phones{
+            margin-right: 30px;
+            margin-bottom: 0;
+            background-color: $yellow;
+            color: $black;
+            padding: 10px 10px;
+            border-radius: 5px;
+            z-index: -2;
+            position: relative;
+            top: -5px;
+         }
+         @include for-small-phones{
+            margin-right: 5px;
+            margin-bottom: 0;
+            background-color: $yellow;
+            color: $black;
+            padding: 10px 10px;
+            border-radius: 5px;
+            z-index: -2;
+            position: relative;
+            top: -5px;
+         }
+         @include for-iphone5{
+            margin-right: 5px;
+            margin-bottom: 0;
+            background-color: $yellow;
+            color: $black;
+            padding: 10px 10px;
+            border-radius: 5px;
+            z-index: -2;
+            position: relative;
+            top: -5px;
+         }
+    }
+    &__link{
+        max-width: 160px;
+        text-decoration: none;
+        color: $black;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        &:last-child{
+            margin-bottom: 0;
+        }
+        &::before{
+            position: absolute;
+            content: '';
+            height: 8px;
+            width: 160px;
+            background-color: $yellow;
+            top: 6px;
+            z-index: -1;
+            @include for-landscape-phones{
+                display: none;
+            }
+            @include for-portrait-phones{
+               display: none;
+            }
+            @include for-small-phones{
+               display: none;
+            }
+            @include for-iphone5{
+                display: none;
+             }
+        }
+    }
+    &__content{
+        max-width: 4 * $grid + 3 * $gap;
+        width: 100%;
+        display: flex;
+        @include for-landscape-phones{
+           margin-top: 40px;
+         }
+         @include for-portrait-phones{
+           margin-top: 40px;
+         }
+         @include for-small-phones{
+            margin-top: 40px;
+            display: block;
+         }
+         @include for-iphone5{
+            margin-top: 40px;
+            display: block;
+         }
+    }
+    &__header{
+        margin-bottom: 42px;
+    }
+    &__text{
+        margin-right: 72px;
+        font-family: Rubik;
+        flex: 1 1 auto;
+    }
+    &__icon{
+        flex: 0 1 auto;
+        @include for-small-phones{
+            display: flex;
+            margin-top: 30px;
+            justify-content: flex-start;
+         }
+         @include for-iphone5{
+            display: flex;
+            margin-top: 30px;
+            justify-content: flex-start;
+         }
+    }
+}

@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="./resources/icons/favicon.svg" type="image/x-icon">
+    <title>Device</title>
+</head>
+<body>
+    <header class="page-header">
+        <h1 class="page-header__hidden-header _hidden">Device</h1>
+        <div class="page-header__container _container">
+            <div class="page-header__body">
+                <figure class="page-header__logo">
+                    <object type="image/svg+xml" data="./resources/icons/logo.svg" alt="Логотип магазина электроники Device" class="page-header__logo-icon"></object>
+                </figure>
+                <nav class="page-header__menu">
+                    <form class="page-header__form">
+                        <fieldset class="page-header__fields-wrapper">
+                            <object type="image/svg+xml" data="./resources/icons/search.svg" class="page-header__search-icon"></object>
+                            <label class="_hidden" for="#search">Поиск по сайту</label>
+                            <input type="text" id="search" placeholder="Поиск по сайту">
+                            <button class="page-header__button">Найти</button>
+                        </fieldset>
+                    </form>
+                    <ul class="page-header__functions-list">
+                        <li class="page-header__list-item page-header__list-item_login">
+                            <object type="image/svg+xml" data="./resources/icons/login.svg" class="page-header__login-icon"></object>
+                            <a href="#" class="page-header__link">Войти</a>
+                        </li>
+                            <li class="page-header__list-item">
+                                <object type="image/svg+xml" data="./resources/icons/compare.svg" class="page-header__compare-icon"></object>
+                                <a href="#" class="page-header__link">Сравнить</a>
+                            </li>
+                            <li class="page-header__list-item page-header__list-item_cart">
+                                <object type="image/svg+xml" data="./resources/icons/cart.svg" class="page-header__cart-icon"></object>
+                                <a href="#" class="page-header__link">Корзина</a>
+                            </li>
+                    </ul>
+                </nav>
+                <nav class="page-header__services-menu">
+                    <div class="page-header__catalogue">
+                        <a href="#" class="page-header__catalogue-link _subtitle">Каталог товаров</a>
+                        <button class="page-header__catalogue-icon-box">
+                            <object type="image/svg+xml" data="./resources/icons/plus.svg" aria-label="Добавить" class="page-header__catalogue-icon"></object>
+                        </button>
+                    </div>
+                        <ul class="page-header__services-list">
+                            <li class="page-header__services-item"><a href="#" class="page-header__services-link _subtitle">Доставка</a></li>
+                            <li class="page-header__services-item"><a href="#" class="page-header__services-link _subtitle">Гарантия</a></li>
+                            <li class="page-header__services-item"><a href="#" class="page-header__services-link _subtitle">Контакты</a></li>
+                        </ul>
+                </nav>
+                <div class="page-header__submenu">
+                    <ul class="page-header__submenu-list">
+                        <li class="page-header__submenu-item">
+                            <a href="#" class="page-header__submenu-link">Виртуальная реальность</a>
+                        </li>
+                        <li class="page-header__submenu-item">
+                            <a href="#" class="page-header__submenu-link">Моноподы для селфи</a>
+                        </li>
+                        <li class="page-header__submenu-item">
+                            <a href="#" class="page-header__submenu-link">Экшн-камеры</a>
+                        </li>
+                    </ul>
+                    <ul class="page-header__submenu-list">
+                        <li class="page-header__submenu-item">
+                            <a href="#" class="page-header__submenu-link">Фитнес-браслеты</a>
+                        </li>
+                        <li class="page-header__submenu-item">
+                            <a href="#" class="page-header__submenu-link">Умные часы</a>
+                        </li>
+                    </ul>
+                    <ul class="page-header__submenu-list">
+                        <li class="page-header__submenu-item">
+                            <a href="#" class="page-header__submenu-link">Квадрокоптеры</a>
+                        </li>
+                    </ul>
+                </div>
+                <button class="page-header__burger-button">
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="slider">
+            <h2 class="slider__hidden-header _hidden">Карусель товаров</h2>
+            <div class="slider__container _container">
+                <div class="slider__body">
+                    <header class="slider__header">
+                        <span class="slider__slide-number">01</span>
+                    </header>
+                    <div class="slider__content content">
+                        <button class="content__prev-slide-button"><object type="image/svg+xml" data="./resources/icons/arrow-left.svg" aria-label="Предыдущий слайд"></object></button>
+                        <button class="content__next-slide-button"><object type="image/svg+xml" data="./resources/icons/arrow-left.svg" aria-label="Следующий слайд"></object></button>
+                        <div class="content__body">
+                            <figure class="content__img-wrapper">
+                                <img src="./resources/Images/slide-1.png" class="content__img" alt="Квадрокоптер">
+                                <div class="content__pagination">
+                                    <span class="content__dot content__dot_active"></span>
+                                    <span class="content__dot"></span>
+                                    <span class="content__dot"></span>
+                                </div>
+                            </figure>
+                        </div>
+                        <div class="content__info">
+                            <div class="content__info-text">
+                                <h3 class="content__header _header">Порхает как бабочка, жалит как пчела!</h3>
+                                <p class="content__description _text">Этот обычный, на первый взгляд, квадрокоптер оснащён мощным лазером, замаскированным под стандартную камеру.</p>
+                            </div>
+                            <div class="content__learn-more">
+                                <span class="content__link-wrapper">
+                                    <a href="#" class="content__link _subtitle">Подробнее</a>
+                                </span>
+                            </div>
+                            <div class="content__characteristics">
+                                <table class="content__table">
+                                    <tr class="content__item-value">
+                                        <td>800 м</td>
+                                        <td>50 м</td>
+                                    </tr>
+                                    <tr class="content__value-description">
+                                        <td>Дальность полета</td>
+                                        <td>Радиус поражения</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="categories">
+            <h2 class="categories__hidden-header _hidden">Категории товаров</h2>
+            <div class="categories__container _container">
+                <div class="categories__items">
+                    <div class="categories__item">
+                        <a class="categories__link" href="#">
+                            <object type="image/svg+xml" data="./resources/icons/vr.svg" aria-label="Виртуальная реальность"></object>
+                        </a>
+                        <a class="categories__description" href="#">Виртуальная реальность</a>
+                    </div>
+                    <div class="categories__item">
+                        <a class="categories__link" href="#">
+                            <object type="image/svg+xml" data="./resources/icons/monopodes.svg" aria-label="Моноподы для селфи"></object>
+                        </a>
+                        <a class="categories__description" href="#">Моноподы <br> для селфи</a>
+                    </div>
+                    <div class="categories__item">
+                        <a class="categories__link" href="#">
+                            <object type="image/svg+xml" data="./resources/icons/action-cameras.svg" aria-label="Экшн-камеры"></object>
+                        </a>
+                        <a class="categories__description" href="#">Экшн-камеры</a>
+                    </div>
+                    <div class="categories__item">
+                        <a class="categories__link" href="#">
+                            <object type="image/svg+xml" data="./resources/icons/fitness-bracelets.svg" aria-label="Финес-браслеты"></object>
+                        </a>
+                        <a class="categories__description" href="#">Фитнес-браслеты</a>
+                    </div>
+                    <div class="categories__item">
+                        <a class="categories__link" href="#">
+                            <object type="image/svg+xml" data="./resources/icons/smart-watches.svg" aria-label="Умные часы"></object>
+                        </a>
+                        <a class="categories__description" href="#">Умные часы</a>
+                    </div>
+                    <div class="categories__item">
+                        <a class="categories__link" href="#">
+                            <object type="image/svg+xml" data="./resources/icons/quad.svg" aria-label="Квадрокоптеры"></object>
+                        </a>
+                        <a class="categories__description" href="#">Квадрокоптеры</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="services">
+            <h2 class="services__hidden-header _hidden">Услуги</h2>
+            <div class="services__container _container">
+                <div class="services__body">
+                    <nav class="services__tab tab">
+                        <div class="tab__item active">
+                            <a href="#" class="tab__link _subtitle">Доставка</a>
+                        </div>
+                       <div class="tab__item">
+                        <a href="#" class="tab__link _subtitle">Гарантия</a>
+                       </div>
+                       <div class="tab__item">
+                        <a href="#" class="tab__link _subtitle">Кредит</a>
+                       </div>
+                    </nav>
+                    <div class="tab__content">
+                        <div class="tab__text">
+                            <h3 class="tab__header _header">Доставка</h3>
+                            <p class="tab__description _text">Мы с удовольствием доставим ваш товар прямо
+                                к вашему подъезду совершенно бесплатно! Ведь
+                                мы неплохо заработаем, поднимая его на ваш этаж.</p>
+                        </div>
+                       <div class="tab__icon">
+                           <object type="image/svg+xml" data="./resources/icons/delivery.svg" alt="Доставка"></object>
+                       </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="company-info">
+            <h2 class="company-info__hidden-header _hidden">О компании</h2>
+            <div class="company-info__container _container">
+                <div class="company-info__inner">
+                    <header class="company-info__header">
+                        <div class="company-info__icon">
+                            <img src="./resources/icons/company-info_delivery.svg" alt="Доставка">
+                        </div>
+                        <p class="company-info__title">Доставим редкий товар под заказ</p>
+                        <button class="company-info__delivery-button">
+                            <object type="image/svg+xml" data="./resources/icons/info.svg" alt="Заказать доставку"></object>
+                        </button>
+                    </header>
+                    <div class="company-info__body">
+                        <section class="company-info__info">
+                            <div class="company-info__divider">
+                                <object type="image/svg+xml" data="./resources/icons/divider.svg" alt=""></object>
+                            </div>
+                            <div class="company-info__section-title _header">О нас</div>
+                            <p class="company-info__text _text">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.
+                            </p>
+                            <p class="company-info__text _text">
+                                Мы можем доставить ваш товар в самые отдалённые уголки России транспортными компаниями:
+                            </p>
+                            <ul class="company-info__list">
+                                <li class="company-info__list-item">Меловые линии</li>
+                                <li class="company-info__list-item">СДИК</li>
+                                <li class="company-info__list-item">ТоксБерри</li>
+                            </ul>
+                            <div class="company-info__more">
+                                <a href="#" class="company-info__link _subtitle">Подробнее о нас</a>
+                            </div>
+                        </section>
+                        <section class="company-info__info">
+                            <div class="company-info__divider">
+                                <object type="image/svg+xml" data="./resources/icons/divider.svg" alt=""></object>
+                            </div>
+                            <div class="company-info__section-title _header">Контакты</div>
+                            <p class="company-info__text _text">Вы можете забрать товар сами, заехав в наш офис.
+                                Заодно сможете проверить работоспособность покупки.
+                            </p>
+                            <p class="company-info__subtitle">
+                                Интернет-магазин «Девайс»
+                            </p>
+                            <p class="company-info__address _text">
+                                Санкт-Петербург, набережная реки Карповки, 5, литера П.
+                            </p>
+                            <div class="company-info__number">
+                                <a href="tel:+78128121212" class="company-info__phone _text">+7 (812) 812-12-12</a>
+                            </div>
+                            <p class="company-info__subtitle">
+                                Время работы
+                            </p>
+                            <ul class="company-info__schedule">
+                                <li class="company-info__schedule-item _text">пн—пт: с 10:00 до 22:00</li>
+                                <li class="company-info__schedule-item _text">сб—вс: с 10:00 до 19:00</li>
+                            </ul>
+                            <div class="company-info__more">
+                                <a href="#" class="company-info__link _subtitle">Напишите нам</a>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="mailing">
+            <h2 class="mailing__hidden-header _hidden">Подписаться на рассылку</h2>
+            <div class="mailing__container _container">
+                <div class="mailing__body">
+                    <header class="mailing__header">
+                        <h3 class="mailing__subscribe-header _header">Подпишитесь на рассылку</h3>
+                        <p class="mailing__text _text">
+                            Еженедельный дайджест с обзорами новинок,
+                            длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.
+                        </p>
+                    </header>
+                    <div class="mailing__controls">
+                        <form class="mailing__form" action="" method="post">
+                            <fieldset class="mailing__wrapper">
+                                <label for="mailing__email" class="mailing__email-label _hidden">Ваш e-mail</label>
+                                <input id="mailing__email" type="email" placeholder="Ваш e-mail">
+                            </fieldset>
+                        </form>
+                        <div class="mailing__subscribe">
+                            <div class="mailing__notification">
+                                <div class="mailing__icon">
+                                    <object type="image/svg+xml" data="./resources/icons/check.svg"></object>
+                                </div>
+                                <p class="mailing__subtext _text">
+                                    Это бесплатно
+                                </p>
+                            </div>
+                            <button class="mailing__subscribe-btn _subtitle">Подписаться</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <h2 class="footer__hidden-header _hidden">Футер</h2>
+        <div class="footer__container _container">
+            <div class="footer__body">
+                <div class="footer__logo">
+                    <figure class="footer__logo-wrapper">
+                        <object type="image/svg+xml" data="./resources/icons/footer_logo.svg" class="footer__logo-icon" aria-label="Device"></object>
+                    </figure>
+                </div>
+                <nav class="footer__menu menu">
+                    <div class="menu__address-wrapper">
+                        <p class="menu__address _text">
+                            Санкт-Петербург, набережная
+                            реки Карповки, 5, литера П.
+                        </p>
+                    </div>
+                        <ul class="menu__list">
+                            <li class="menu__item _subtitle">
+                               <a class="menu__link" href="#">Доставка</a>
+                            </li>
+                            <li class="menu__item _subtitle">
+                               <a class="menu__link" href="#">Гарантия</a>
+                            </li>
+                            <li class="menu__item _subtitle">
+                               <a class="menu__link" href="#">Контакты</a>
+                            </li>
+                        </ul>
+                    <div class="menu__phone-wrapper">
+                        <a href="tel:+78128121212" class="menu__phone">Тел.: +7 (812) 812-12-12</a>
+                    </div>
+                </nav>
+                <nav class="footer__media">
+                    <div class="footer__divider-wrapper">
+                        <figure class="footer__divider">
+                            <object type="image/svg+xml" data="./resources/icons/footer_divider.svg" class="footer__divider-icon"></object>
+                        </figure>
+                    </div>
+                    <ul class="footer__media-list">
+                        <li class="footer__media-item">
+                            <a href="#" class="footer__media-link">
+                                <object type="image/svg+xml" data="./resources/icons/facebook_pic.svg" class="footer__facebook" aria-label="Facebook"></object>
+                            </a>
+                        </li>
+                        <li class="footer__media-item">
+                            <a href="#" class="footer__media-link">
+                                <object type="image/svg+xml" data="./resources/icons/instagram_pic.svg" class="footer__instagram" aria-label="Instagram"></object>
+                            </a>
+                        </li>
+                        <li class="footer__media-item">
+                            <a href="#" class="footer__media-link">
+                                <object type="image/svg+xml" data="./resources/icons/twitter_pic.svg" class="footer__twitter" aria-label="Twitter"></object>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="footer__academy-logo-wrapper">
+                        <a href="#" class="footer__academy-logo">
+                            <object type="image/svg+xml" data="./resources/icons/html_academy_logo.svg" class="footer__academy-icon" aria-label="Html Academy"></object>
+                        </a>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
